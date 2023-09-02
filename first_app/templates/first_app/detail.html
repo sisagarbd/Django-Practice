@@ -8,6 +8,6 @@
 
 <h3>{{ musitian.instument }}</h3>
 
-
-
+<a href="{% url 'first_app:musitian_update' pk=musitian.pk %}" class="btn btn-warning btn-sm" >Update</a>
+<a href="{% url 'first_app:delete_musitian' pk=musitian.pk %}" class="btn btn-danger btn-sm" >Delete</a>
 {% endblock %}
